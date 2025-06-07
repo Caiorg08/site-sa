@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra Rabello Estética</title>
+    <link rel="shortcut icon" href="imgs/logox.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body{background-color: #f5f5f5;}
+    </style>
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <div id="cabecalho" class="top-bar text-white py-2 px-3 d-flex justify-content-between">
+        <div id="contatos">
+            <a href="#"><i class="bi bi-envelope"></i> samarabe3@gmail.com</a>
+            <a href="https://wa.me/+5531975595296"><i class="bi bi-whatsapp"></i> (31) 97559-5296</a>
+            <a href="tel:+5531975595296"><i class="bi bi-telephone"></i> (31) 97559-5296</a>
+        </div>
+        <div id="icones">
+            <a target="_blank" href="https://wa.me/+5531975595296"><i class="bi bi-whatsapp"></i></a>
+            <a target="_blank"
+                href="https://www.instagram.com/sandra_rabello?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                    class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/SalaoDeBelezaEEsteticaSandraRabello"><i
+                    class="bi bi-facebook"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="logod" src="imgs/logox.png" alt=""></a>
+            <!--<a class="navbar-brand" href="#">Estética Sandra Rabello</a> -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tratamentos.html">TRATAMENTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="redushape.html">REDUSHAPE</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary ms-3">AGENDAR AVALIAÇÃO</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section-heading text-center">
+        <h2>Blog</h2>
+        <div class="section-heading-line-left"></div>
+    </div>
+
+    <main>
+        <section id="posts" class="posts">
+            <!-- Post 1 -->
+            <article class="post">
+                <img src="imgs/tratamento1.jpg" alt="Tratamento de Estética" class="post-image">
+                <div class="post-content">
+                    <h2><a href="#">Como Escolher o Tratamento Ideal para Sua Pele</a></h2>
+                    <p class="post-meta">Publicado em 05 de abril de 2025</p>
+                    <p class="post-excerpt">Entenda as diferenças entre os tratamentos e como escolher o que se adapta
+                        às suas necessidades. Descubra como cuidar melhor da sua pele.</p>
+                    <a href="#" class="read-more">Leia mais...</a>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post">
+                <img src="imgs/tratamento2.jpg" alt="Tratamento Facial" class="post-image">
+                <div class="post-content">
+                    <h2><a href="#">Benefícios do Peeling Facial para a Sua Pele</a></h2>
+                    <p class="post-meta">Publicado em 02 de abril de 2025</p>
+                    <p class="post-excerpt">O peeling facial é um dos tratamentos mais populares. Saiba como ele pode
+                        melhorar a textura da sua pele e reduzir manchas e rugas.</p>
+                    <a href="#" class="read-more">Leia mais...</a>
+                </div>
+            </article>
+
+            <!-- Adicione mais posts conforme necessário -->
+        </section>
+    </main>
+
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Salão de Beleza e Estética Sandra Rabello, R. Joaquim José, 542 - Fonte Grande, Contagem - MG, 32013-390&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div id="rodainfo" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="footercontact">
+                        <h5>Contato</h5>
+                        <a href="#"><i class="bi bi-envelope"></i> samarabe3@gmail.com</a>
+                        <a href="https://wa.me/+5531975595296"><i class="bi bi-whatsapp"></i> (31) 97559-5296</a>
+                        <a href="tel:+5531975595296"><i class="bi bi-telephone"></i> (31) 97559-5296</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sobre Nós</h5>
+                    <p>Somos uma clínica de estética dedicada a oferecer os melhores tratamentos para o seu corpo e
+                        rosto. Nossa equipe é composta por profissionais altamente qualificados e comprometidos com
+                        o
+                        seu bem-estar.</p>
+                </div>
+
+                <div id="copyright">
+                    <hr>
+                    <p>© 2025 Clínica de Estética Sandra Rabello – Clínica Estética | Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="zapbut"><a target="_blank" href=https://wa.me/+5531975595296><img src="imgs/whats.ico" alt=""></a></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
