@@ -585,3 +585,10 @@ footer p {
   display: block;
   margin: 12px auto 0 auto;
 }
+
+@media (max-width: 768px) {
+  .imgclas img {
+    width: 90vw;       /* quase toda a largura da tela */
+    height: 50vw;      /* proporcional para manter o formato retangular */
+  }
+}
