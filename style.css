@@ -86,6 +86,18 @@ body {
     width: auto;
 }
 
+#maingrid > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 420px;
+  background: #fff;
+  border-radius: 0px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  
+}
+
 #maingrid div {
     border: 1px solid rgb(19, 80, 49);
     border-radius: 1px;
@@ -119,6 +131,11 @@ body {
 
 #maingrid a {
     margin: 10px;
+}
+
+#maingrid .btn {
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -543,7 +560,7 @@ footer p {
 }
 
 #mvvgrid img:hover {
-    transform: scale(1.1);
+    transform: scale(2.1);
 }
 
 #mvvgrid a {
@@ -554,4 +571,17 @@ footer p {
     #mvvgrid {
         grid-template-columns: 1fr;
     }
+}
+
+.imgclas img {
+  width: 30vw;           /* Largura é 30% da largura da tela */
+  height: 15vw;          /* Altura igual à largura (quadrada) */
+  object-fit: cover;     /* Corta e preenche a área sem distorcer */
+  object-position: center;
+  border-radius: 8px;   /* Opcional: bordas arredondadas */
+}
+
+.imgclas .btn {
+  display: block;
+  margin: 12px auto 0 auto;
 }

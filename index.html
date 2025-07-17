@@ -15,7 +15,16 @@
 </head>
 
 <body>
-    <!-- Barra superior -->
+
+    <!-- Aviso -->
+<div id="aviso-bemvindo" style="display: none; align-items: center; justify-content: center; position: fixed; z-index: 9999; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.45);">
+    <div style="background: #fff; border-radius: 18px; box-shadow: 0 4px 32px rgba(0,0,0,0.18); max-width: 90vw; width: 400px; padding: 32px 24px 24px 24px; text-align: center; position: relative;">
+        <button id="fechar-aviso" style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 1.5rem; color: #888; cursor: pointer;" aria-label="Fechar aviso">&times;</button>
+        <h2 style="color: #b85c8c; font-weight: bold; margin-bottom: 12px;">Bem-vinda!</h2>
+        <p style="font-size: 1.1rem; color: #333; margin-bottom: 0;">Olá! Seja bem-vinda à Estética Sandra Rabello! É um prazer te receber aqui. 💖<br><br>Trabalhamos com tratamentos estéticos personalizados para redução de medidas, rejuvenescimento facial e muito mais.</p>
+    </div>
+</div>
+
     <div id="cabecalho" class="top-bar text-white py-2 px-3 d-flex justify-content-between">
         <div id="contatos">
             <a href="#"><i class="bi bi-envelope"></i> samarabe3@gmail.com</a>
@@ -97,7 +106,7 @@
             </div>
             <div>
                 <div class="imgclas"><img
-                        src="https://www.luciarebello.com.br/wp-content/uploads/2022/10/botox-toxina-botulinica.png"
+                        src="imgs/botox.jpg"
                         alt=""></div>
                 <h5>Botox</h5>
                 <p>Aplicação de toxina botulínica para suavizar rugas de expressão, principalmente na testa, ao redor
@@ -341,6 +350,26 @@
      
         window.open(url, '_blank');
     });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (!localStorage.getItem('avisoBemVindoFechado')) {
+        document.getElementById('aviso-bemvindo').style.display = 'flex';
+    } else {
+        document.getElementById('aviso-bemvindo').style.display = 'none';
+    }
+
+    var fechar = document.getElementById('fechar-aviso');
+    if (fechar) {
+        fechar.addEventListener('click', function() {
+            var aviso = document.getElementById('aviso-bemvindo');
+            if (aviso) aviso.style.display = 'none';
+            
+            localStorage.setItem('avisoBemVindoFechado', 'true');
+        });
+    }
+});
 </script>
 </body>
 
