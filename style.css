@@ -603,11 +603,5 @@ footer p {
 
 }
 
-@media (max-width: 990px){
-      .imgclas img {
-    width: 90vw;       /* quase toda a largura da tela */
-    height: 60vw;      /* proporcional para manter o formato retangular */
-  }
-    
-}
+
 
