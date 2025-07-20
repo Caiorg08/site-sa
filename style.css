@@ -14,7 +14,7 @@ body {
 
 /* -------------------- CABEÇALHO -------------------- */
 #cabecalho {
-    background-color: rgb(19, 80, 49);
+    background-color: #ee5aa7;
 }
 
 #cabecalho a {
@@ -55,10 +55,12 @@ body {
 /* -------------------- HEADER / TOPO -------------------- */
 
 /* -------------------- CAROUSEL -------------------- */
-#carouselExample img {
-    width: 100%;
-    height: 600px;
+#carouselExample img { 
+    width: 100% !important;
+    height: auto;
 }
+
+
 
 /* -------------------- PRIMEIRA SEÇÃO -------------------- */
 .frst {
@@ -81,9 +83,10 @@ body {
 #maingrid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    padding: 0 16%;
+    padding: 0 10%;
     gap: 50px;
     width: auto;
+    padding-left: 5%;
 }
 
 #maingrid > div {
@@ -93,26 +96,28 @@ body {
   height: 100%;
   min-height: 420px;
   background: #fff;
-  border-radius: 0px;
+
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   
 }
 
 #maingrid div {
-    border: 1px solid rgb(19, 80, 49);
-    border-radius: 1px;
+    border: 1px solid#ee5aa7;
+    
     overflow: hidden;
 }
 
 #maingrid div .imgclas {
     border: 0;
-    border-radius: 1px;
+    
     overflow: hidden;
     
 }
 
 #maingrid div h5 {
-    color: rgb(64, 109, 35);
+    color: #ee5aa7;
+   
+    
 }
 
 #maingrid div h5,
@@ -122,6 +127,7 @@ body {
 
 #maingrid img {
     width: 100%;
+  
     transition: transform 0.5s ease;
 }
 
@@ -178,13 +184,13 @@ body {
 }
 
 .btn-primary {
-    background-color: rgb(19, 80, 49);
-    border-color: rgb(64, 109, 35);
+    background-color: #ee5aa7;
+    border-color: #ee5aa7;
 }
 
 .btn-primary:hover {
-    background-color: rgb(64, 109, 35);
-    border-color: rgb(19, 80, 49);
+    background-color: #ee5aa7;
+    border-color: #ee5aa7;
 }
 
 /* -------------------- MAPA -------------------- */
@@ -356,7 +362,7 @@ footer p {
 .section-heading-line-left {
     width: 50px;
     height: 3px;
-    background-color: rgb(19, 80, 49);
+    background-color: #ee5aa7;
     margin: 20px auto;
 }
 
@@ -384,7 +390,7 @@ footer p {
 
 .depoimento-author {
     font-size: 14px;
-    color: rgb(64, 109, 35);
+    color: #ee5aa7;
     font-weight: bold;
 }
 /* media screen do carrosel */
@@ -400,9 +406,9 @@ footer p {
     #carouselExample img {
       width: 100%;
       height: auto;
-      max-height: 300px;
+     
       object-fit: cover;
-      border-radius: 8px;
+     
     }
   }
   
@@ -502,7 +508,7 @@ footer p {
 }
 
 .so{
-    background-color: green !important;
+    background-color: #ee5aa7 !important;
 }
 
 .processo{
@@ -510,8 +516,8 @@ footer p {
 }
 
 .btn {
-    background-color: rgb(64, 109, 35) !important;
-    border-color: rgb(64, 109, 35) !important;
+    background-color: #ee5aa7 !important;
+    border-color: #ee5aa7 !important;
     
 }
 .btn:hover{
@@ -534,7 +540,7 @@ footer p {
 }
 
 #mvvgrid div {
-    border: 1px solid rgb(19, 80, 49);
+    border: 1px solid #ee5aa7;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -546,7 +552,7 @@ footer p {
 }
 
 #mvvgrid div h5 {
-    color: rgb(64, 109, 35);
+    color: #ee5aa7;
 }
 
 #mvvgrid div h5,
@@ -571,6 +577,8 @@ footer p {
     #mvvgrid {
         grid-template-columns: 1fr;
     }
+
+ 
 }
 
 .imgclas img {
@@ -578,7 +586,7 @@ footer p {
   height: 15vw;          /* Altura igual à largura (quadrada) */
   object-fit: cover;     /* Corta e preenche a área sem distorcer */
   object-position: center;
-  border-radius: 8px;   /* Opcional: bordas arredondadas */
+   /* Opcional: bordas arredondadas */
 }
 
 .imgclas .btn {
@@ -591,4 +599,15 @@ footer p {
     width: 90vw;       /* quase toda a largura da tela */
     height: 50vw;      /* proporcional para manter o formato retangular */
   }
+
+
 }
+
+@media (max-width: 990px){
+      .imgclas img {
+    width: 90vw;       /* quase toda a largura da tela */
+    height: 60vw;      /* proporcional para manter o formato retangular */
+  }
+    
+}
+
