@@ -476,7 +476,7 @@ footer p {
 
 .sobre-imagem img {
     max-width: 80%;
-    border-radius: 10px;
+    
 }
 
 @media (max-width: 768px) {
