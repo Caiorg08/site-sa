@@ -90,14 +90,14 @@ body {
 }
 
 #maingrid > div {
-  display: flex;
+ display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-  min-height: 420px;
   background: #fff;
-
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  min-height: 420px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid #ee5aa7;
+  
+  overflow: hidden;
   
 }
 
@@ -114,21 +114,34 @@ body {
     
 }
 
+#maingrid .imgclas {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
 #maingrid div h5 {
-    color: #ee5aa7;
+font-size: 1rem;
+  font-weight: 600;
+  color: #ee5aa7;
    
     
 }
 
 #maingrid div h5,
 #maingrid div p {
-    padding: 5px;
+    padding: 10px 15px;
+  margin: 0;
 }
 
 #maingrid img {
-    width: 100%;
-  
-    transition: transform 0.5s ease;
+     width: 100%;
+  height: 220px;           /* Altura fixa para manter padrão visual */
+  object-fit: cover;       /* Corta e preenche a área */
+  object-position: center; /* Centraliza a imagem */
+  transition: transform 0.5s ease;
+ 
 }
 
 #maingrid img:hover {
@@ -140,8 +153,7 @@ body {
 }
 
 #maingrid .btn {
-  margin-top: auto;
-  margin-bottom: 20px;
+  margin: auto 15px 20px 15px;
 }
 
 @media only screen and (max-width: 990px) {
