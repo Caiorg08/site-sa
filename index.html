@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="imgs/logox.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -17,13 +18,19 @@
 <body>
 
     <!-- Aviso -->
-<div id="aviso-bemvindo" style="display: none; align-items: center; justify-content: center; position: fixed; z-index: 9999; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.45);">
-    <div style="background: #fff; border-radius: 18px; box-shadow: 0 4px 32px rgba(0,0,0,0.18); max-width: 90vw; width: 400px; padding: 32px 24px 24px 24px; text-align: center; position: relative;">
-        <button id="fechar-aviso" style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 1.5rem; color: #888; cursor: pointer;" aria-label="Fechar aviso">&times;</button>
-        <h2 style="color: #b85c8c; font-weight: bold; margin-bottom: 12px;">Bem-vinda!</h2>
-        <p style="font-size: 1.1rem; color: #333; margin-bottom: 0;">Olá! Seja bem-vinda à Estética Sandra Rabello! É um prazer te receber aqui. 💖<br><br>Trabalhamos com tratamentos estéticos personalizados para redução de medidas, rejuvenescimento facial e muito mais.</p>
+    <div id="aviso-bemvindo"
+        style="display: none; align-items: center; justify-content: center; position: fixed; z-index: 9999; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.45);">
+        <div
+            style="background: #fff; border-radius: 18px; box-shadow: 0 4px 32px rgba(0,0,0,0.18); max-width: 90vw; width: 400px; padding: 32px 24px 24px 24px; text-align: center; position: relative;">
+            <button id="fechar-aviso"
+                style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 1.5rem; color: #888; cursor: pointer;"
+                aria-label="Fechar aviso">&times;</button>
+            <h2 style="color: #b85c8c; font-weight: bold; margin-bottom: 12px;">Bem-vinda!</h2>
+            <p style="font-size: 1.1rem; color: #333; margin-bottom: 0;">Olá! Seja bem-vinda à Estética Sandra Rabello!
+                É um prazer te receber aqui. 💖<br><br>Trabalhamos com tratamentos estéticos personalizados para redução
+                de medidas, rejuvenescimento facial e muito mais.</p>
+        </div>
     </div>
-</div>
 
     <div id="cabecalho" class="top-bar text-white py-2 px-3 d-flex justify-content-between">
         <div id="contatos">
@@ -72,12 +79,25 @@
                 <img src="imgs/sbls.jpg" class="d-block w-100" alt="Imagem 2">
             </div>
         </div>
-        
+        <!-- Botões de navegação manual -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
     </div>
+    <br>
 
     <div class="frst">
-        <h1>Nossos Procedimentos</h1>
-        <hr>
+        <div class="hrs">
+            <h1>Nossos Procedimentos</h1>
+            <hr style="margin-left: 1.3%;">
+            <br>
+        </div>
+
         <div id="maingrid">
             <div>
                 <div class="imgclas"><img
@@ -87,34 +107,44 @@
                 <p>Tratamento estético que utiliza técnicas como massagens modeladoras, equipamentos de alta tecnologia
                     ou ativos termogênicos para diminuir medidas corporais, eliminar gordura localizada e remodelar a
                     silhueta.</p>
-                <a class="btn btn-primary ms-3" href="https://wa.me/5531975595296?text=Ol%C3%A1%20estou%20interessada%20nos%20procedimentos%20de%20redu%C3%A7%C3%A3o%20de%20medidas." target="_blank">Quero saber mais</a>
-            </div>
-             <div>
-                <div class="imgclas"><img src="imgs/CRIO.jpeg" alt=""></div>
-                <h5>Criolipólise de Placas</h5>
-                <p>criolipólise de placas funciona e é eficaz na redução de gordura localizada. O procedimento utiliza baixas temperaturas para congelar e eliminar a gorduras promovendo resultados incríveis</p>
-                <a class="btn btn-primary ms-3" href="https://wa.me/5531975595296?text=Ol%C3%A1%20estou%20interessada%20nos%20procedimentos%20Criolipólise de Placas." target="_blank">Quero saber mais</a>
+                <a class="btn btn-primary ms-3"
+                    href="https://wa.me/5531975595296?text=Ol%C3%A1%20estou%20interessada%20nos%20procedimentos%20de%20redu%C3%A7%C3%A3o%20de%20medidas."
+                    target="_blank">Quero saber mais</a>
             </div>
             <div>
-                <div class="imgclas"><img
-                        src="imgs/botox.jpg"
-                        alt=""></div>
+                <div class="imgclas"><img src="imgs/CRIO.jpeg" alt=""></div>
+                <h5>Criolipólise de Placas</h5>
+                <p>criolipólise de placas funciona e é eficaz na redução de gordura localizada. O procedimento utiliza
+                    baixas temperaturas para congelar e eliminar a gorduras promovendo resultados incríveis</p>
+                <a class="btn btn-primary ms-3"
+                    href="https://wa.me/5531975595296?text=Ol%C3%A1%20estou%20interessada%20nos%20procedimentos%20Criolipólise de Placas."
+                    target="_blank">Quero saber mais</a>
+            </div>
+            <div>
+                <div class="imgclas"><img src="imgs/botox.jpg" alt=""></div>
                 <h5>Botox</h5>
                 <p>Aplicação de toxina botulínica para suavizar rugas de expressão, principalmente na testa, ao redor
                     dos olhos e entre as sobrancelhas. O procedimento é rápido, seguro e com resultados visíveis em
                     poucos dias.</p>
-                <a class="btn btn-primary ms-3" href="https://wa.me/5531975595296?text=Ol%C3%A1%20estou%20interessada%20nos%20procedimentos%20de%20botox." target="_blank">Quero saber mais</a>
+                <a class="btn btn-primary ms-3"
+                    href="https://wa.me/5531975595296?text=Ol%C3%A1%20estou%20interessada%20nos%20procedimentos%20de%20botox."
+                    target="_blank">Quero saber mais</a>
             </div>
         </div>
     </div>
 
-    <section class="sobre container-fluid">
+    <br>
+    <section class="sobre container-fluid" style="background-color: #f9f9f9;">
         <div class="row no-gutters">
             <div class="col-md-6 col-sm-12 col-12 p-0">
                 <div class="padding-10-perc h-100 sobre-texto">
                     <div class="section-heading text-left">
-                        <h2>Sobre Nós</h2>
-                        <div class="section-heading-line-left"></div>
+                        <div class="hrs">
+                            <h2 style="margin-top: 25px;">Sobre Nós</h2>
+                            <hr>
+                            <br>
+                        </div>
+
                     </div>
                     <div class="sobre-content">
                         <p><span>Bem-vindo à nossa clínica de estética, onde nossa missão é
@@ -134,20 +164,7 @@
                             seus objetivos de forma saudável, com estudos e unindo ciência, estética Integrativa
                             criei
                             meu método que ajuda a trazer a auto estima de volta .</p>
-                        <!--
-                        <h3>Nossa Missão</h3>
-                        <p>Proporcionar tratamentos estéticos que elevem a autoestima de nossos pacientes, usando
-                            técnicas modernas e inovadoras, sempre com foco no bem-estar e na segurança.</p>
-                        <h3>Nossa Visão</h3>
-                        <p>Ser reconhecida como uma clínica de excelência, referência em estética corporal e facial,
-                            proporcionando aos nossos pacientes resultados que superem suas expectativas.</p>
-                        <h3>Valores</h3>
-                        <ul>
-                            <li>Qualidade no atendimento</li>
-                            <li>Respeito ao paciente</li>
-                            <li>Inovação constante</li>
-                            <li>Compromisso com a ética e segurança</li>
-                        </ul>-->
+
                     </div>
                 </div>
             </div>
@@ -166,15 +183,17 @@
             <div class="col-md-12 col-sm-12 col-12 p-0">
                 <div class="padding-10-perc h-100 depoimento-container">
                     <div class="section-heading text-center">
-                        <h2>O que nossos clientes dizem</h2>
-                        <div class="section-heading-line-left"></div>
+                        <div class="hrs">
+                            <h2 style="margin-top: 25px;">O que nossos clientes dizem</h2>
+                            <hr>
+                        </div>
                     </div>
                     <div class="depoimentos-content">
                         <div class="depoimento-item">
                             <p class="depoimento-text">Boa noite sandra!!! Muito obrigada pelo excelente atendimento e
                                 tratamento, estou muito satisfeita com o resultado, igual você mesma disse basta ter
                                 foco e eu consegui graças a você, gratidão.</p>
-                            <p class="depoimento-author">- Cliente Anônimo</p>
+                            <p class="depoimento-author">- Ana Luiza</p>
                         </div>
                         <div class="depoimento-item">
                             <p class="depoimento-text">Tenho 64 anos e sou corredora de rua e maratonista, algum tempo
@@ -195,85 +214,68 @@
         </div>
     </section>
 
-    <!-- 
-    <div class="mvv">
-        <h1>Nossos Diferenciais</h1>
-        <p>Nos destacamos por:</p>
-        <div id="mvvgrid">
-            <div>
-                <div class="imgclas"><img src="imgs/missao.png" alt=""></div>
-                <h5><b>Missão</b></h5>
-                <p>Proporcionar tratamentos estéticos que elevem a autoestima de nossos pacientes, usando técnicas modernas e inovadoras, sempre com foco no bem-estar e na segurança.</p>
-            </div>
-            <div>
-                <div class="imgclas"><img src="imgs/visao.png" alt=""></div>
-                <h5><b>Visão</b></h5>
-                <p>Ser reconhecida como uma clínica de excelência, referência em estética corporal e facial, proporcionando aos nossos pacientes resultados que superem suas expectativas.</p>
-            </div>
-            <div>
-                <div class="imgclas"><img src="imgs/valores.png" alt=""></div>
-                <h5><b>Valores</b></h5>
-                <p>Qualidade no atendimento, Respeito ao paciente, Inovação constante, Compromisso com a ética e segurança</p>
-            </div>
-        </div>
-    </div>
--->
     <div id="formudiv">
-    <div id="formu" class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card p-4 shadow">
-                    <h4 class="text-center mb-4">Peça sua avaliação</h4>
-                    <form id="formulario">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome <span style="color: rgb(255, 0, 0);">*</span></label>
-                            <input id="nome" type="text" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail <span style="color: rgb(255, 0, 0);">*</span></label>
-                            <input id="email" type="email" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefone" class="form-label">Telefone <span style="color: rgb(255, 0, 0);">*</span></label>
-                            <input id="telefone" type="tel" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="data" class="form-label">Data de Nascimento <span style="color: rgb(255, 0, 0);">*</span></label>
-                            <input id="data" type="date" class="form-control" required>
-                        </div>
-                        <label for="exampleDataList" class="form-label">Qual tratamento mais te interessa no momento?</label>
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escolha um">
-                        <datalist id="datalistOptions">
-                            <option value="Botox">
-                            <option value="Preenchedores">
-                            <option value="Skinbooster">
-                            <option value="Micropigmentação de Sobrancelhas">
-                            <option value="Hennas">
-                            <option value="Micropigmentação Labial">
-                            <option value="Limpeza de Pele">
-                            <option value="Microagulhamento">
-                            <option value="Peeling clareador">
-                            <option value="Outro...">
-                            <option value="Redução de Medidas">
-                            <option value="Criolipólise de Placas">
-                            <option value="Clareamento de Mancha">
-                            <option value="Detox Corporal">
-                            <option value="Preenchimento Sem Agulhas">
-                             <option value="Outro..."></option>   
-                        </datalist>
-                        <div class="form-check mb-3">
-                            <input id="politicaPrivacidade" class="form-check-input" type="checkbox" required>
-                            <label class="form-check-label" for="politicaPrivacidade">
-                                Eu concordo com a <a href="#" class="text-primary">Política de Privacidade</a>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Pedir avaliação</button>
-                    </form>
+        <div id="formu" class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-4 shadow">
+                        <h4 class="text-center mb-4">Peça sua avaliação</h4>
+                        <form id="formulario">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome <span
+                                        style="color: rgb(255, 0, 0);">*</span></label>
+                                <input id="nome" type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail <span
+                                        style="color: rgb(255, 0, 0);">*</span></label>
+                                <input id="email" type="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone <span
+                                        style="color: rgb(255, 0, 0);">*</span></label>
+                                <input id="telefone" type="tel" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="data" class="form-label">Data de Nascimento <span
+                                        style="color: rgb(255, 0, 0);">*</span></label>
+                                <input id="data" type="date" class="form-control" required>
+                            </div>
+                            <label for="exampleDataList" class="form-label">Qual tratamento mais te interessa no
+                                momento?</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                placeholder="Escolha um">
+                            <datalist id="datalistOptions">
+                                <option value="Botox">
+                                <option value="Preenchedores">
+                                <option value="Skinbooster">
+                                <option value="Micropigmentação de Sobrancelhas">
+                                <option value="Hennas">
+                                <option value="Micropigmentação Labial">
+                                <option value="Limpeza de Pele">
+                                <option value="Microagulhamento">
+                                <option value="Peeling clareador">
+                                <option value="Outro...">
+                                <option value="Redução de Medidas">
+                                <option value="Criolipólise de Placas">
+                                <option value="Clareamento de Mancha">
+                                <option value="Detox Corporal">
+                                <option value="Preenchimento Sem Agulhas">
+                                <option value="Outro..."></option>
+                            </datalist>
+                            <div class="form-check mb-3">
+                                <input id="politicaPrivacidade" class="form-check-input" type="checkbox" required>
+                                <label class="form-check-label" for="politicaPrivacidade">
+                                    Eu concordo com a <a href="#" class="text-primary">Política de Privacidade</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Pedir avaliação</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="mapouter">
         <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
@@ -290,7 +292,9 @@
                     <div id="footercontact">
                         <h5>Contato</h5>
                         <a href="#"><i class="bi bi-envelope"></i> samarabe3@gmail.com</a>
-                        <a href="https://wa.me/+5531975595296"><i class="bi bi-whatsapp"></i> (31) 97559-5296</a>
+                        <a target="_blank"
+                            href="https://www.instagram.com/sandra_rabello?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                                class="bi bi-instagram"></i> sandra_rabello</a>
                         <a href="tel:+5531975595296"><i class="bi bi-telephone"></i> (31) 97559-5296</a>
                     </div>
                 </div>
@@ -318,56 +322,55 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o envio padrão do formulário
+
+            // Captura os valores
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const telefone = document.getElementById('telefone').value;
+            const data = document.getElementById('data').value;
+            const tratamento = document.getElementById('exampleDataList').value;
+
+
+            const mensagem = `Olá! Gostaria de pedir uma avaliação:\n\n` +
+                `👤 Nome: ${nome}\n` +
+                `📧 E-mail: ${email}\n` +
+                `📞 Telefone: ${telefone}\n` +
+                `🎂 Data de Nascimento: ${data}\n` +
+                `💆 Tratamento de interesse: ${tratamento}`;
+
+
+            const numero = '5531975595296';
+
+
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+
+            window.open(url, '_blank');
+        });
+    </script>
 
     <script>
-    document.getElementById('formulario').addEventListener('submit', function (e) {
-        e.preventDefault(); // Impede o envio padrão do formulário
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!localStorage.getItem('avisoBemVindoFechado')) {
+                document.getElementById('aviso-bemvindo').style.display = 'flex';
+            } else {
+                document.getElementById('aviso-bemvindo').style.display = 'none';
+            }
 
-        // Captura os valores
-        const nome = document.getElementById('nome').value;
-        const email = document.getElementById('email').value;
-        const telefone = document.getElementById('telefone').value;
-        const data = document.getElementById('data').value;
-        const tratamento = document.getElementById('exampleDataList').value;
+            var fechar = document.getElementById('fechar-aviso');
+            if (fechar) {
+                fechar.addEventListener('click', function () {
+                    var aviso = document.getElementById('aviso-bemvindo');
+                    if (aviso) aviso.style.display = 'none';
 
-        
-        const mensagem = `Olá! Gostaria de pedir uma avaliação:\n\n` +
-                         `👤 Nome: ${nome}\n` +
-                         `📧 E-mail: ${email}\n` +
-                         `📞 Telefone: ${telefone}\n` +
-                         `🎂 Data de Nascimento: ${data}\n` +
-                         `💆 Tratamento de interesse: ${tratamento}`;
-
-     
-        const numero = '5531975595296'; 
-
-        
-        const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-
-     
-        window.open(url, '_blank');
-    });
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    if (!localStorage.getItem('avisoBemVindoFechado')) {
-        document.getElementById('aviso-bemvindo').style.display = 'flex';
-    } else {
-        document.getElementById('aviso-bemvindo').style.display = 'none';
-    }
-
-    var fechar = document.getElementById('fechar-aviso');
-    if (fechar) {
-        fechar.addEventListener('click', function() {
-            var aviso = document.getElementById('aviso-bemvindo');
-            if (aviso) aviso.style.display = 'none';
-            
-            localStorage.setItem('avisoBemVindoFechado', 'true');
+                    localStorage.setItem('avisoBemVindoFechado', 'true');
+                });
+            }
         });
-    }
-});
-</script>
+    </script>
 </body>
 
 </html>
